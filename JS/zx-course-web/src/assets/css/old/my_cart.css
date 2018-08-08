@@ -1,0 +1,315 @@
+/*web端选课单页面样式*/
+/*选课单头部标题*/
+.cart_table_thead{
+	height:45px;
+	background-color: #ffffff;
+  font-size: 13px;
+  color: #333333;
+  line-height: 45px;
+}
+.cart_table_thead .checkbox{
+    width:80px;
+    text-align: center;
+    float: left;
+}
+.cart_table_thead .detail{
+    width:640px;
+    text-align: center;
+    float: left;
+}
+.cart_table_thead .price{
+    width:180px;
+    text-align: center;
+    float: left;
+}
+.cart_table_thead .delete{
+    width:100px;
+    text-align: center;
+    float: left;
+}
+
+/*选课单联报头部文案样式*/
+.cart_table_title{
+    height:30px;
+    line-height: 40px;
+    padding-top:10px;
+/*    background: #ffeeea;*/
+}
+.cart_table_title p{
+    margin-left: 64px;
+}
+.cart_table_title p span:nth-child(1){
+    background-color: #262729;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    height:43px;
+    line-height: 43px;
+}
+.cart_table_title p span:nth-child(2){
+    margin-left: 16px;
+    color: #222222;
+    font-size: 13px;
+    height:43px;
+    line-height: 43px;
+}
+
+.cart_course_list ul li div:nth-child(1){
+    height:136px;
+    line-height: 136px;
+    width:64px;
+    text-align: center;
+    float: left;
+    padding: 10px 0;
+}
+.course_cart_info{
+    height:136px;
+    padding: 10px 0;
+    width:650px;
+    float: left;
+}
+.course_banner{
+    width: 205px;
+    height: 136px;
+    float: left;
+}
+.course_banner img{
+    width: 205px;
+    height: 136px;
+}
+.course_info{
+    float: left;
+    margin-left:175px;
+    width: 400px;
+}
+
+.course_info p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+}
+.course_info p:nth-child(1){
+    margin-top:10px;
+    line-height:38px;
+    color: #222222;
+    font-size: 18px;
+}
+.course_info p:nth-child(2){
+    line-height:20px;
+    color: #666666;
+    font-size: 12px;
+}
+.course_info p:nth-child(3){
+    line-height:20px;
+    color: #666666;
+    font-size: 12px;
+}
+.cart_course_list ul li div:nth-child(3){
+    padding: 10px 0;
+    height:136px;
+    line-height: 136px;
+    width:180px;
+    text-align: center;
+    float: left;
+}
+.cart_course_list ul li div:nth-child(4){
+    padding: 10px 0;
+    height:136px;
+    line-height: 136px;
+    width:100px;
+    text-align: center;
+    float: left;
+}
+.warm_up{
+    color: #fa7267;
+    font-size: 13px;
+    border:1px solid #fa7267;
+    border-radius: 2px;
+}
+/*.cart_course_list ul li div:nth-child(4) span{
+    height:14px;
+    width: 14px;
+    background: url(../images/admin01.jpg) no-repeat;
+}*/
+
+/*计算价格*/
+.cart_total{
+    height:60px;
+    line-height: 60px;
+    margin-top:15px;
+    background-color: #efefef;
+}
+.cart_total div:nth-child(2){
+    font-size: 13px;
+    color: #333333;
+    float: left;
+    margin-left: 40px;
+}
+.cart_total div:nth-child(3){
+    font-size: 13px;
+    color: #333333;
+    float: left;
+    margin-left: 375px;
+}
+.cart_total div:nth-child(3) span:nth-child(1) {
+    margin-right:15px;
+}
+.cart_total div:nth-child(3) span:nth-child(2) {
+    margin-right:15px;
+}
+.cart_total div:nth-child(3) span:nth-child(4) {
+    font-size: 20px;
+    color: #fa7267;
+    margin-right:36px;
+}
+.cart_total div:nth-child(4) {
+    text-align: center;
+    float: right;
+    width:100px;
+    height:58px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #0dc2b3;
+}
+.removeDisabledCourse{
+    color:#222222;
+    font-size: 18px;
+    margin-right:20px;
+    float: right;
+    cursor: pointer;
+}
+.removeDisabledCourse span {
+    border-radius: 2px;
+    border: 1px solid #fa7267;
+    color: #fa7267;
+    font-size: 12px;
+}
+.disabledCourse{
+    background-color: #dddddd;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 2px;
+}
+/*.nocheck{*/
+    /*height:18px;*/
+    /*width:18px;*/
+    /*background: url("../../images/old/check.jpg") no-repeat;*/
+/*}*/
+.cart_link_check{
+    background: url(../../images/old/icon_course_check.png) no-repeat 0px;
+    display: inline-block;
+    width: 40px;
+    vertical-align: top;
+    padding-left: 17px;
+    color: #666666;
+    text-align: center;
+    height: 100%;
+    margin-left: 10px;
+}
+.cart_link_uncheck{
+    background: url(../../images/old/icon_course_uncheck.png) no-repeat 0px;
+    display: inline-block;
+    width: 40px;
+    vertical-align: top;
+    padding-left: 17px;
+    color: #666666;
+    height: 100%;
+    text-align: center;
+    margin-left: 10px;
+}
+/*批量删除弹窗*/
+.delete_dialog_panal{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+.delete_dialog_background{
+    z-index:999;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.8;
+}
+.delete_dialog_main{
+    z-index:1000;
+    left: 50%;
+    margin-left: -170px;
+    width: 340px;
+    top:50%;
+    margin-top: -111px;
+    height: 222px;
+    position: relative;
+    border-radius: 4px;
+}
+.delete_dialog_main div:nth-child(1){
+    height:40px;
+    background-color: #0dc2b3;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.delete_dialog_main div:nth-child(1) p span:nth-child(1){
+    color: #ffffff;
+    font-size: 16px;
+    margin-left:20px;
+    line-height:40px;
+    font-weight: bold;
+    float: left;
+}
+.delete_dialog_main div:nth-child(1) p span:nth-child(2){
+    margin-top: 12px;
+    float: right;
+    line-height: 20px;
+    margin-right:20px;
+    /*background: url("../images/close-dialog.png") no-repeat center center / 100% 100%;*/
+    width:12px;
+    height:12px;
+    cursor: pointer;
+}
+.delete_dialog_main div:nth-child(2){
+    height:180px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.delete_dialog_main div:nth-child(2) p:nth-child(1){
+    color: #ffffff;
+    font-size: 16px;
+    height:110px;
+    line-height:110px;
+
+}
+.delete_dialog_main div:nth-child(2) p:nth-child(1) span{
+    margin-left: 60px;
+    font-size: 14px;
+    color: #333333;
+}
+.delete_dialog_main div:nth-child(2) p:nth-child(2) span{
+    display: inline-block;
+    width:86px;
+    height:35px;
+    line-height:35px;
+    text-align: center;
+    border: 1px solid #0dc2b3;
+    border-radius: 2px;
+}
+.delete_dialog_main div:nth-child(2) p:nth-child(2) span:nth-child(1){
+    float: left;
+    margin-left: 70px;
+    background-color: #0dc2b3;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.delete_dialog_main div:nth-child(2) p:nth-child(2) span:nth-child(2){
+    float: right;
+    margin-right: 70px;
+    background-color: #ffffff;
+    color: #0dc2b3;
+    font-size: 14px;
+    cursor: pointer;
+}

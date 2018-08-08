@@ -1,0 +1,90 @@
+body {
+  background: #f8f8f8;
+}
+
+.default_address_check {
+  background: url(../../images/old/icon_course_check.png) no-repeat 0;
+  display: inline-block;
+  padding-left: 28px;
+  color: #666;
+  cursor: pointer;
+}
+
+.default_address_not_check {
+  background: url(../../images/old/icon_course_uncheck.png) no-repeat 0;
+  display: inline-block;
+  padding-left: 28px;
+  color: #666;
+  cursor: pointer;
+}
+
+.address_save {
+  display: inline-block;
+  width: 130px;
+  height: 45px;
+  background-color: #0dc2b3;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 42px;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.address_save:hover {
+  background-color: #56dcd1;
+}
+
+.set_address_default {
+  display: inline-block;
+  width: 68px;
+  height: 24px;
+  background-color: #0dc2b3;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.default_address:hover {
+  background-color: #0dc2b3;
+  color: #fff;
+}
+
+.default_address {
+  cursor: pointer;
+  display: inline-block;
+  width: 68px;
+  height: 24px;
+  border: 1px solid #0dc2b3;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #0dc2b3;
+  line-height: 24px;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.address-Item.on {
+  border-radius: 4px;
+  background-color: #dff6f4;
+  color: #0dc2b3;
+}
+
+#address-ul .on {
+  border-bottom: 1px transparent;
+  margin-bottom: 1px;
+  background-color: #ffffff;
+  color: #0dc2b3;
+}
+
+.choose-address-item {
+  float: left;
+  border: 1px solid #d0d0d0;
+  border-right: 0;
+  background-color: #f8f8f8;
+  cursor: pointer
+}

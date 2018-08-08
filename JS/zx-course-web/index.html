@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link type="image/x-icon" href="http://static.zhixue.com/zhixue.ico" rel="shortcut icon"/>
+    <title>智学网-口袋直播</title>
+    <!-- 手动引入第三方库/插件 -->
+    <% for (var chunk in htmlWebpackPlugin.options.scripts) { %>
+      <% if (htmlWebpackPlugin.options.scripts.hasOwnProperty(chunk)) { %>
+        <script src="<%=htmlWebpackPlugin.options.scripts[chunk]%>"></script>
+      <% } %>
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

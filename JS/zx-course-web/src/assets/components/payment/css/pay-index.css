@@ -1,0 +1,377 @@
+.my-pay-bg{
+  background: #FFFFFF;
+}
+.my-pay{
+  width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  background: #FFFFFF;
+}
+.address-form{
+  margin-left: 20px;
+}
+/*.red{*/
+  /*color: red;*/
+/*}*/
+.title-left{
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 4px;
+  height: 21px;
+  border-radius: 3px;
+  background-color: #0dc2b3;
+}
+.title-text{
+  display: inline-block;
+  font-size:18px;
+  font-weight:bold;
+  padding-left: 10px;
+}
+.address-btn{
+  width:130px;
+  height:35px;
+  background: #FFFFFF;
+  border: #0DC2B3 solid 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 0 20px 30px;
+  color: #0DC2B3
+}
+.address-btn span{
+  width:70px;
+  height:14px;
+  font-size:14px;
+  line-height:14px;
+  color: #0DC2B3;
+}
+.info-inner{
+  padding: 20px 30px;
+}
+.total-price{
+  width:1099px;
+  height:120px;
+  border:#ECECEC dashed 1px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+.course-item{
+  font-size:16px;
+  height:141px;
+  width:1115px;
+  line-height: 30px;
+  background: url("../images/course-bg.png") no-repeat;
+}
+.course-inner{
+  height: 80px;
+  width: 1000px;
+  padding: 30px 74px 30px 60px;
+}
+.course-left {
+  display: inline-block;
+  float:left;
+  width: 688px;
+}
+.course-right{
+  display: inline-block;
+  float: right;
+  margin-right: 62px;
+  overflow: hidden;
+  text-align: right;
+}
+.course-name{
+  font-size:18px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.course-info{
+  font-size:16px;
+  color:#999999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pay-course-voucher{
+  border: none;
+  font-size:14px;
+  color: #fa7267;
+  float: right;
+  width: 136px;
+}
+.course-amount{
+  font-size:20px;
+  color:#FA7267;
+  font-weight: bold;
+}
+.course-amount i{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+.price-symbol{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+}
+.price-right{
+  float:right;
+  text-align: right;
+  padding: 15px 108px 0 0;
+  line-height: 30px;
+}
+.price-voucher{
+  font-size:14px;
+  color:#999999;
+}
+.alipay-btn{
+  border: 1px solid #0DC2B3;
+  width: 184px;
+  height: 40px;
+}
+.alipay-btn span.checked {
+  height:24px;
+  width:24px;
+  background: url(../images/icon-check.png) no-repeat;
+  display: inline-block;
+  color: #666666;
+}
+.alipay-btn span.unchecked {
+  height:24px;
+  width:24px;
+  background: url(../images/icon-uncheck.png) no-repeat;
+  display: inline-block;
+  color: #666666;
+}
+.pay-submit{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+.address{
+  width: 1099px;
+  border: #ECECEC dashed 1px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+.address-phone{
+  width: 500px;
+  padding: 20px 0 10px 10px;
+}
+.address-phone span{
+  display: inline-block;
+  font-size: 17px;
+}
+.address-phone .el-input {
+  width: 265px;
+}
+.address-list{
+  font-size:18px;
+  padding: 23px;
+}
+.address-line{
+  height:30px;
+  width:100%;
+}
+.address-line span {
+  display: inline-block;
+  margin-right: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.address-line a.modify {
+  display:inline-block;
+  width:25px;
+  height:24px;
+  background: url("../images/modify-addr.png") no-repeat 0 0;
+  vertical-align: middle;
+}
+.address-line a.checked {
+  height:22px;
+  width:22px;
+  background: url(../images/icon-check.png) no-repeat;
+  display: inline-block;
+  color: #666666;
+  vertical-align: middle;
+}
+.address-line a.unchecked {
+  height:22px;
+  width:22px;
+  background: url(../images/icon-uncheck.png) no-repeat;
+  display: inline-block;
+  color: #666666;
+  vertical-align: middle;
+}
+/* 微信支付页 */
+.pay-wechat{
+  width:1200px;
+  height:504px;
+  background: #FFFFFF;
+  margin: auto;
+  padding-top: 20px;
+}
+.pay-wechat-title{
+  padding: 10px 20px;
+}
+.pay-wechat-body{
+  float: left;
+  margin-top: 56px;
+}
+.pay-wechat-left{
+  float: left;
+  width:500px;
+  height:400px;
+  border-radius: 10px
+}
+.pay-wechat-zx{
+  text-align: center;
+  margin-top: 20px;
+}
+.pay-wechat-order{
+  padding: 20px 0 0 100px;
+}
+.pay-wechat-amount{
+  margin-top: 15px;
+  text-align: left;
+  border-top: 1px dashed #EFEFEF;
+  width: 308px;
+  padding-top: 16px;
+}
+.pay-wechat-order span{
+  color:#FA7267
+}
+.pay-wechat-order strong{
+  color:#FA7267;
+  font-size:16px;
+}
+.pay-wechat-right{
+  float: left;
+  width:516px;
+  height:300px;
+  background:#FBFBFB;
+  border-radius: 10px
+}
+.qrcode-bg {
+  background: #FFFFFF;
+  margin: 49px 0 0 86px;
+}
+.qrcode {
+  padding: 20px;
+  height: 164px;
+  width: 164px;
+}
+.pay-wechat-qr{
+  float: left;
+}
+.pay-wechat-tip{
+  float: left;
+  text-align: center;
+  margin: 100px 0 0 30px;
+}
+/* 支付方式 */
+.pay-type{
+}
+.pay-type li{
+  float: left;
+  margin-right: 34px;
+}
+.pay-type a.unselected{
+  display: block;
+  width: 180px;
+  height: 36px;
+  border: 1px solid #e4e4e4;
+  padding: 1px;
+}
+.pay-type a:hover,.pay-type a.selected{
+  display: block;
+  width: 180px;
+  height: 36px;
+  padding: 0;
+  border: 2px solid #0DC2B3;
+}
+.pay-type a.selected i.check{
+  width: 18px;
+  height: 18px;
+  margin: 11px 0 0 16px;
+  background: url("../images/pay-check.png") no-repeat 0 0;
+}
+.pay-type a.unselected i.check{
+  width: 18px;
+  height: 18px;
+  margin: 11px 0 0 16px;
+  background: url("../images/pay-uncheck.png") no-repeat 0 0;
+}
+.pay-type a i{
+  display: block;
+  float: left;
+}
+.pay-type a span{
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  line-height: 36px;
+  margin-left: 10px;
+}
+.pay-type a i.icon{
+  width: 30px;
+  height: 30px;
+  margin: 3px 0 0 12px;
+}
+.pay-type a i.icon.pay1{
+  background: url("../images/alipay.png") no-repeat 0 0;
+}
+.pay-type a i.icon.pay2{
+  background: url("../images/wechat.png") no-repeat 0 0;
+}
+.pay-type a i.icon.pay3{
+  width: 47px;
+  background: url("../images/unionpay.png") no-repeat 0 0;
+}
+/* 支付反馈弹框 */
+.feedback{
+}
+.feedback-title{
+  text-align: center;
+  font-size:18px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.feedback-body{
+  height:130px;
+  background:#F4F5F7;
+  border-radius: 6px;
+  padding-top: 20px;
+  margin: 0 15px;
+}
+.feedback-body .success{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.feedback-body .repay{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.feedback-footer{
+  background: url("../images/feedback-bg.png") no-repeat 100% 100%;;
+  height: 139px;
+  font-size: 17px;
+  margin: 18px -20px -30px;
+  border-radius: 5px;
+}
+.feedback-tip{
+  padding: 19px 0 0 35px
+}
+.feedback-tel{
+  font-size: 16px;
+  font-weight: bold;
+  color: #FA7267
+}
+.buy-agreement{
+  color: #999;
+  cursor: pointer;
+}

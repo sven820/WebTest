@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/**
+** 存放项目公共组件样式
+**/
+
+/*element UI $message 弹框垂直居中*/
+.vertical-center{
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/*课程详情页 课程详情图片宽度设置*/
+.course-detail-box img{
+  max-width: 100%;
+}
+
+/*element UI 对话框头部样式*/
+.el-dialog {
+  border-radius: 5px;
+}
+.el-dialog__header {
+  padding: 10px 20px 10px;
+  border-top: 3px solid #0DC2B3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.el-dialog__headerbtn {
+  top: 10px;
+}
+
+/*element UI 支付页代金券下拉框*/
+.pay-course-voucher .el-input__inner {
+  /*border: none;*/
+  text-align: center;
+}
+
+/*加载动画*/
+.correcting-waiting {
+  width: 800px;
+  height: 240px;
+  font-size: 16px;
+  color: #999;
+  margin: 0 auto;
+  padding: 200px 0;
+  z-index: 100;
+  text-align: center;
+}
+.correcting-waiting i {
+  display: inline-block;
+  width: 276px;
+  height: 200px;
+  background: url(../images/default/loading-mid.png);
+  background-size: 100% 1400%;
+  -webkit-animation: loading-mid 1.4s steps(14) infinite;
+  animation: loading-mid 1.4s steps(14) infinite;
+}
+.correcting-waiting p {
+  margin-top: 10px;
+}
+@-webkit-keyframes loading-mid{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -1400%;
+  }
+}
+@keyframes loading-mid{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -1400%;
+  }
+}
+
+/* 公共底部样式 */
+.new_foot{
+  height: 115px;
+  overflow: hidden;
+}
+.el-progress-bar__innerText {
+  display: none;
+}
+.el-picker-panel .el-date-picker .el-popper {
+  position: absolute;
+  top: 235px;
+  left: 297px;
+  z-index: 2027;
+  display: block !important;
+}
+.ivu-input {
+   display: none;
+}
+.ivu-picker-panel-body,.ivu-picker-panel-body-wrapper{
+  display: block !important;
+  visibility: visible !important;
+  width: 888px !important;
+  
+}
+.ivu-icon-ios-calendar-outline{
+  display: none;
+}
+.ivu-date-picker, .ivu-date-picker-focused, .ivu-date-picker, .ivu-select-dropdown{
+  display: block !important;
+  visibility: visible !important;
+  width: 888px !important;
+}
+.ivu-date-picker-cells, .ivu-date-picker-cells-header{
+  width: 888px !important;
+  margin: 0;
+}
+.ivu-date-picker-cells span, .ivu-date-picker-cells-cell, .ivu-date-picker-cells-cell-prev-month{
+  display: inline-block;
+  width: 122.2px;
+  height: 38px;
+  text-align: center;
+  margin: 2px;
+  line-height: 38px;
+  border-width: 0 0 1px 1px;
+  border-color: #F1EBE4;
+  border-style: solid;
+  box-sizing: border-box;
+}
+.ivu-picker-confirm{
+  display: none;
+}
+.ivu-date-picker-cells-header{
+  background:rgba(246,251,251,1);
+}
+.ivu-date-picker-cells-focused em{
+  box-shadow: none;
+}
