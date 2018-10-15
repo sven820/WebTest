@@ -68,10 +68,13 @@ var config = {
     //   name: entrypoint => `manifest~${entrypoint.name}`
     // },
   },
-  watch: false, // 会监视被导入的文件是否有改动，如果有改动，自动打包，但配置文件的改动不会被监视
-  watchOptions: { //不监听目录
-        ignored: [/node_modules/ , /static/],
-  },
+
+  //devserver支持watch
+  // watch: false, // 会监视被导入的文件是否有改动，如果有改动，自动打包，但配置文件的改动不会被监视
+  // watchOptions: { //不监听目录
+  //       ignored: [/node_modules/ , /static/],
+  // },
+
   // 不进行打包的模块
   externals:{},
   module: { //webpack loader的执行顺序是从右到左
@@ -232,8 +235,8 @@ var config = {
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 9090,
-    // host: '10.5.221.131',
+    port: 8080,
+    // host: '10.5.221.216',
     open: true, //自动打开浏览器
     index:'index.html',//与HtmlWebpackPlugin中配置filename一样
     inline: true,// 默认为true, 意思是，在打包时会注入一段代码到最后的js文件中，用来监视页面的改动而自动刷新页面,当为false时，网页自动刷新的模式是iframe，也就是将模板页放在一个frame中

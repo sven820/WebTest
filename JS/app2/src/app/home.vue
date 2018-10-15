@@ -1,7 +1,12 @@
 
 <template lang="html">
   <div class="">
-    home home home
+      <p>
+          <router-link to="/home/discover">Discover</router-link>
+          <router-link to="/home/around">Around</router-link>
+      </p>
+      <!-- 对应的组件内容渲染到router-view中 -->
+      <router-view></router-view> 
   </div>
 </template>
 

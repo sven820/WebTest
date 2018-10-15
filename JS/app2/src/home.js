@@ -4,4 +4,3 @@ import Vue from 'vue';
 alert('home')
 
 
-Í

@@ -15,7 +15,7 @@ export default {
   computed: {
   	style: function() {
   		return {
-			backgroundColor: this.isSelected ? 'red' : 'green'
+			 color: this.isSelected ? '#3FC1C6' : '#212426'
   		}
   	}
   },
@@ -33,9 +33,10 @@ export default {
 
 <style lang="css" scoped>
 	.selection-button {
-		background-color: green;
-		width: 200px;
-		height: 80px;
+		background-color: #FAFBFD;
+    color: #212426;
+		/*width: 200px;
+		height: 80px;*/
 		font-size: 26px;
 		border-radius: 2px;
 	}

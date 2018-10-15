@@ -3,10 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>jxf index</title>
+    <script type="text/javascript">
+      let html = document.getElementsByTagName('html')[0]
+      let defaultFont = '16px'
+      if(window.getComputedStyle){//如果支持getComputedStyle属性（IE9及以上，ie9以下不兼容）
+          defaultFont = window.getComputedStyle(html,null).fontSize
+      }else{//如果支持currentStyle（IE9以下使用），返回
+          defaultFont = html.currentStyle.fontSize
+      }
+      
+      if(window.addEventListener){
+          //去掉on
+          window.addEventListener("load", function(event){
+              remConfig()
+          });
+      }else{ //ie
+         window.attachEvent('onload',function(event) {
+              remConfig()
+         });
+      }
+      document.addEventListener('readystatechange',function(){
+        //interactive,complete
+        console.log('document state: ' + document.readyState);
+        // alert(document.getElementsByTagName('body')[0])
+      })
+      document.addEventListener('DOMContentLoaded',function(){
+        console.log('document DOMContentLoaded');
+      })
+      
+      window.onload = function(){
+        console.log('window onload')
+        // alert('onload')
+      }
+      window.addEventListener("resize", function(){
+          console.log('listen window onresize')
+      });
+      window.onresize = function() {
+        console.log('window onresize')
+      }
+      window.onunload = function() {
+        console.log('window onunload') 
+      }
+
+      function remConfig() {
+          let body = document.getElementsByTagName('body')[0]
+            //rem相对于根元素，默认为1rem=字体大小，em相对于父标签
+            //1rem = 100px ,这里可以根据屏幕大小动态设置rem的大小，来动态适配屏幕尺寸，一般字体大小固定都用像素大小，不用rem，固定大小的元素也不用rem
+          html.style.fontSize = '100px' 
+          body.style.fontSize = defaultFont
+      }
+
+      //this是window
+      //alert(this)
+    </script>
   </head>
   <body>
+    <script type="text/javascript">
+    </script>
+    
     <div id="app">
-      {{ message }} 
+      <!-- {{ message }}  -->
       <!-- <img data-src="./assets/images/jxf_test.jpg" src="./images/jxf_test.jpg" alt="">
       <img data-src="./assets/images/dog.png" src="./images/dog.png" alt=""> -->
 
@@ -22,14 +78,31 @@
 
       <!-- <button-counter>
       </button-counter> -->
-      <count-button>
-      </count-button>
+      <!-- <count-button></count-button> -->
       
       <!-- <button type="button" name="button" v-on:click="openHome">open new</button> -->
       <!-- <a href="#" v-on:click="openHome">HOME</a> -->
-    </div>
 
+      <!-- router -->
+      <header>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/user">User</router-link>
+      <router-link to="/user/123">UserHome</router-link>
+      </header>
+      <!-- 对应的组件内容渲染到router-view中 -->
+      <router-view></router-view> 
+
+      <!-- <select-alert class=""></select-alert> -->
+
+      <!-- <setting-arrow title="班级"></setting-arrow> -->
+      <!-- <grade-compare-header></grade-compare-header> -->
+
+      <!-- report demo -->
+      <!-- <app class=""></app> -->
+
+    </div>
   </body>
+
 </html>
 
 

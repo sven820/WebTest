@@ -16,7 +16,7 @@ export default {
   joinAllCourse (params) {
     return axios.post('/goods/getGoodsTag', params).then((response) => {
       return response.data;
-    })
+    })ZXApp
   },
   // 添加购物车
   addToCart (courseId) {
