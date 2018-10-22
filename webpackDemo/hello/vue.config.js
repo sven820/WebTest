@@ -1,4 +1,5 @@
-import merge from 'webpack-merge'
+const path = require('path')
+
 // module.exports = {
 // 	configureWebpack: {
 // 		devServer: {
@@ -9,11 +10,24 @@ import merge from 'webpack-merge'
 // 	}
 // }
 
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
     configureWebpack: config => {
         config.entry = {
             app: './src/client/main.js'
         }
+        config.resolve = {
+            extensions: ['.js', '.vue', '.json'],
+            alias: {
+              'vue$': 'vue/dist/vue.esm.js',
+              '@c': resolve('src/client'),
+              '@s': resolve('src/server'),
+            }
+        }
+
         if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...
         }else if (process.env.NODE_ENV === 'test') {
