@@ -18,6 +18,9 @@ import SubjectGradeCompare from './ZXReport/SubjectGradeCompare'
 import App from './App'
 import router from './router'
 
+console.log("========>")
+console.log(jquery('#app'))
+console.log("========>")
 
 Vue.component('person',{
   data: function () {
