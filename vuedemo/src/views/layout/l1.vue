@@ -1,6 +1,7 @@
 <template>
 	<div class="content">
 		<div class="test">navnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnav</div>
+    <div class="name">{{name}}</div>
 	</div>
 </template>
 
@@ -11,7 +12,15 @@ export default {
 
   data () {
     return {
-
+      name: 'jxf'
+    }
+  },
+  created() {
+    this.test()
+  },
+  methods: {
+    test() {
+      console.log('jxf===');
     }
   }
 }

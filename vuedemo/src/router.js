@@ -22,6 +22,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
+      path: '/ts',
+      name: 'ts',
+      component: () => import('./views/tsdemo/index.vue')
+    },
+    {
       path: '/layout',
       component: () => import('./views/layout/index.vue'),
       children: [

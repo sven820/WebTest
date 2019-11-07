@@ -3,10 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/layout">layout</router-link>
+      <router-link to="/layout">layout</router-link> |
+      <router-link to="/ts">ts vue</router-link>
     </div>
-
-    <span></span>
     <router-view/>
   </div>
 </template>
