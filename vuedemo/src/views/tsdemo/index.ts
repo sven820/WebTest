@@ -1,7 +1,7 @@
 
 import util from './util'
 import test from './test'
-// import { school } from './test'
+import { schoolname } from './test'
 
 export class Person {
 
@@ -17,5 +17,11 @@ export class Person {
         util.test()
 
         test()
+        console.log(schoolname);
+        
+        var tt = 't'
+        console.log(typeof(tt));
+        
+        // tt = 123
     }
 }

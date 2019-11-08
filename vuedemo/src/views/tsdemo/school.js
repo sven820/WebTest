@@ -1,3 +1,3 @@
-let school = 'swjtjxf'
+let schoolname = 'swjtu'
 
-export { school }
+export { schoolname }
