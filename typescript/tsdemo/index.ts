@@ -1,12 +1,16 @@
+import u from './util'
 
-let msg: string = 'jj'
-// msg = 123
-msg = 'xx'
+export class Person {
 
-function jjprint(str: string) {
-    console.log(str)
+    msg: string = 'person class'
+    name: string
+    //构造函数
+    constructor(name: string) {
+        this.name = name
+    }
+
+    hello() {
+        console.log(this.msg)
+        u.test()
+    }
 }
-// jjprint(123)
-jjprint(msg)
-
-let sum: number = 0

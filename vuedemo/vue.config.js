@@ -8,7 +8,7 @@ module.exports = {
     configureWebpack: {
       devtool: 'source-map',
       resolve: {
-        extensions: ['.js', '.vue', '.json', 'ts'],
+        extensions: ['.js', '.vue', '.json', '.ts'],
       },
       module: {
         rules: [

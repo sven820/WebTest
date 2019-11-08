@@ -10,7 +10,7 @@
   import Component from 'vue-class-component'
   import { Emit, Inject, Model, Prop, Provide, Watch } from 'vue-property-decorator'
 
-  import './index.ts'
+  import {Person} from './index.ts'
 
   @Component({
     // 所有的组件选项都可以放在这里
@@ -34,9 +34,9 @@
 
     // 方法
     greet(msg: string) {
-        let name: string = 'jxf'
-    //   alert('greeting: ' + this.msg)
-        console.log(name);
+        
+        let p = new Person('jxf')
+        p.hello()
     }
   }
 </script>
